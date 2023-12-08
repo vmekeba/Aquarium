@@ -38,7 +38,10 @@ button{
   left: 50%;
 -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, --50%);
+  
 }
+
+
 
 button:hover{
   cursor: pointer;
@@ -64,10 +67,3 @@ h2{
   padding-bottom: 1em
 }
 
-/* alert{
-  display: none;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 1.0em;
-  color: #2196F3;
-  background: #1F285C;
-} */

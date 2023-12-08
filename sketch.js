@@ -14,20 +14,20 @@ let sampleIsLooping;
 
     //loading all images//
 function preload(){
-ocean = loadImage ('ocean.png');
+ocean = loadImage ('ocean_new.gif');
 coral = loadImage ('coral.png');
-fishschool = loadImage ('fishschool_2.png');
+fishschool = loadImage ('fishschool_3.png');
 jelly = loadImage ('jelly_3.png');
-octopus = loadImage ('octopus_2.png');
+octopus = loadImage ('octopus_3.png');
 whaleshark = loadImage('whaleshark_2.png');
-seahorse = loadImage ('seahorse_2.png');
-diver = loadImage ('diver.png');
+seahorse = loadImage ('seahorse_3.png');
+diver = loadImage ('diver2.png');
 bluewhale = loadImage ('bluewhale_2.png');
    }
 
     // canvas setup //
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(800, 600);
   selected = jelly;
   
   //establishing buttons for images//
@@ -79,11 +79,11 @@ function theAlert1_f(){
 }
 
 function theAlert2_f(){
-  alert("Jellyfish have no brain, heart, bones or eyes. They are made up of a smooth, bag-like body and tentacles armed with tiny, stinging cells. These incredible invertebrates use their stinging tentacles to stun or paralyse prey before gobbling it up.There are more than 2,000 known species of jellyfish");
+  alert("Jellyfish have no brain, heart, bones or eyes. They are made up of a smooth, bag-like body and tentacles armed with tiny, stinging cells. These incredible invertebrates use their stinging tentacles to stun or paralyse prey before gobbling it up.There are more than 2,000 known species of jellyfish.");
 }
 
 function theAlert3_f(){
-  alert("Octopuses live in all the world’s oceans but are especially abundant in warm, tropical waters. Crabs, shrimps, and lobsters rank among their favorite foods. If threatened, octopuses shoot an inky fluid that darkens the water, confusing the aggressor. The octopus can also change to gray, brown, pink, blue, or green to blend in with its surroundings ");
+  alert("Octopuses live in all the world’s oceans but are especially abundant in warm, tropical waters. Crabs, shrimps, and lobsters rank among their favorite foods. If threatened, octopuses shoot an inky fluid that darkens the water, confusing the aggressor. The octopus can also change to gray, brown, pink, blue, or green to blend in with its surroundings.");
 }
 
 function theAlert4_f(){
@@ -110,15 +110,14 @@ function musicControl_f(){
      ele.loop();
      
      sampleIsLooping = true;
-     imgButton = text('Stop Audio');
     
    } else {
      ele.stop();
      
      sampleIsLooping = false;
-     imgButton = text('Play Audio');
    } 
   }
+
 
 //establishing functions for each button//
 function fishschool_f(){
@@ -151,19 +150,20 @@ function bluewhale_f(){
 
     //establishing background ocean image//
 function draw() {
-  background (ocean,600,400); 
+  background (ocean,800,600); 
   if (mouseIsPressed === true) {
-    image(selected, 125, mouseY -200, 410, 410);
-    mouseX = 125;
+ image(selected, 100, mouseY -100, 600, 600);
+    mouseX = 100;
   } else {
-    image(selected, mouseX -170, 30, 410, 410);
+    image(selected, mouseX -100, 100, 600, 600);
   }
      
   
     // the x,y axis coordinates//
-text(mouseX + "," + mouseY, 20, 20);
+  text(mouseX + "," + mouseY, 20, 20);
+  fill(255);
     
     // the coral and seaweed image placement in the corners//
-image(coral,-10, 05, 610, 410);
+image(coral,-10, 05, 860, 610);
     
     }
