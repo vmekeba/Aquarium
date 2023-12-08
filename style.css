@@ -6,8 +6,9 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
-  font-family: 'Trebuchet MS', sans-serif;
+html,
+body {
+  font-family: "Trebuchet MS", sans-serif;
   margin: 0;
   padding: 1em;
   color: #1F285C;
@@ -23,27 +24,26 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-button{
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 1.1em;
-  color: #2196F3;
-  background: #1F285C;
-  padding: .75rem 1.25em;
-  border-radius: 12px;
-  transition: opacity .2s;
-  
-  margin:8pt;
-  position: below;
-  top: 50%;
-  left: 50%;
--ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, --50%);
-  
+p {
+  font-size: 1.3em;
 }
 
+button {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+  color: #2196F3;
+  background: #1F285C;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  transition: opacity 0.2s;
 
+  margin: 8pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-button:hover{
+button:hover {
   cursor: pointer;
   background: #2196F3;
   color: #1F285C;
@@ -54,16 +54,18 @@ canvas {
   display: block;
 }
 
-h1, h2, p{
+h1,
+h2,
+h3,
+h4,
+p {
   text-align: center;
 }
 
-
-h1{
-  padding-top: 1em
+h1 {
+  padding-top: 1em;
 }
 
-h2{
-  padding-bottom: 1em
+h2 {
+  padding-bottom: 1em;
 }
-
